@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import about from "@/assets/about.jpg";
 
-const tags = ["Runway", "Streetwear", "Editorial", "Casual", "Corporate", "Bridal", "Creative"];
+const tags = ["Mississipi Fashion House", "Fashion and Fusion", "Posh The Brand"];
 
 export function About() {
   return (
@@ -15,7 +15,7 @@ export function About() {
           className="relative"
         >
           <div className="aspect-[4/5] overflow-hidden">
-            <img src={about} alt="Model behind the scenes" loading="lazy" className="w-full h-full object-cover" />
+            <img src={about} alt="Model in a black tailored suit outdoors" loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-crimson text-beige px-6 py-4 hidden md:block">
             <div className="font-display text-3xl">10+</div>
@@ -29,19 +29,17 @@ export function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <p className="editorial-line text-crimson uppercase tracking-[0.35em] text-xs mb-6">About the House</p>
+          <p className="editorial-line text-crimson uppercase tracking-[0.35em] text-xs mb-6">About the Jeannete Hope Wangara</p>
           <h2 className="font-display text-5xl md:text-6xl leading-tight mb-8 text-beige">
-            A studio for <em className="text-crimson not-italic font-light">faces</em> and stories that linger.
+            I'm a thrilled <em className="text-crimson not-italic font-light">In-House</em> Content Creator & Model.
           </h2>
           <p className="text-beige/75 leading-relaxed mb-6">
-            ModelVerse is a contemporary modelling house dedicated to building
-            distinctive portfolios for emerging and established talent.
-            We craft images that don't just sell — they remember.
+            With a passion for storytelling and experience in crafting engaging content, 
+            I'm ready to bring the brand to life through compelling visuals and authentic narratives.
           </p>
           <p className="text-beige/60 leading-relaxed mb-10">
-            From quiet runway moments to maximalist editorial spreads, our
-            roster spans streetwear, bridal, corporate, cultural, and creative
-            campaigns for brands that take their image seriously.
+            Let's create something awesome together.
+            Below are some of the brands I've had the pleasure of working with:
           </p>
           <div className="flex flex-wrap gap-3">
             {tags.map((t) => (

@@ -13,7 +13,7 @@ export function Featured() {
           className="lg:col-span-7"
         >
           <div className="aspect-[16/11] overflow-hidden">
-            <img src={featured} alt="Crimson silk editorial photoshoot" loading="lazy" className="w-full h-full object-cover" />
+            <img src={featured} alt="Model in a pinstripe suit near stone columns" loading="lazy" className="w-full h-full object-cover" />
           </div>
         </motion.div>
 

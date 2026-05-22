@@ -14,12 +14,12 @@ import runway from "@/assets/runway.jpg";
 import cultural from "@/assets/cultural.jpg";
 
 const cards = [
-  { img: editorial, title: "Editorial Fashion", location: "Milan Studio", desc: "A bold visual story inspired by confidence, elegance, and high-end magazine fashion." },
-  { img: streetwear, title: "Streetwear Style", location: "Brooklyn, NY", desc: "Urban fashion captured through expressive poses, layered outfits, and city-inspired energy." },
-  { img: bridal, title: "Bridal Modelling", location: "Tuscany", desc: "Graceful bridal looks designed to express beauty, romance, and timeless elegance." },
-  { img: corporate, title: "Corporate Fashion", location: "London HQ", desc: "Professional modelling looks for business brands, formal campaigns, and executive styling." },
-  { img: runway, title: "Runway Looks", location: "Paris Fashion Week", desc: "Dynamic fashion pieces created for movement, confidence, and stage presence." },
-  { img: cultural, title: "Cultural Fashion", location: "Lagos · Marrakech", desc: "A celebration of heritage, identity, and traditional fashion through modern modelling." },
+  { img: editorial, title: "Editorial Fashion", location: "Nairobi", desc: "A bold visual story inspired by confidence, elegance, and high-end magazine fashion." },
+  { img: streetwear, title: "Streetwear Style", location: "Nairobi", desc: "Urban fashion captured through expressive poses, layered outfits, and city-inspired energy." },
+  { img: bridal, title: "Bridal Modelling", location: "Nairobi", desc: "Graceful bridal looks designed to express beauty, romance, and timeless elegance." },
+  { img: corporate, title: "Corporate Fashion", location: "Nairobi", desc: "Professional modelling looks for business brands, formal campaigns, and executive styling." },
+  { img: runway, title: "Runway Looks", location: "Nairobi", desc: "Dynamic fashion pieces created for movement, confidence, and stage presence." },
+  { img: cultural, title: "Cultural Fashion", location: "Nairobi", desc: "A celebration of heritage, identity, and traditional fashion through modern modelling." },
 ];
 
 export function Portfolio() {
@@ -35,7 +35,7 @@ export function Portfolio() {
           </div>
           <p className="text-beige/60 max-w-sm">
             Drag, swipe or tap through six signature directions —
-            each a chapter in the ModelVerse archive.
+            each a chapter in the Jeannete Hope Wangara archive.
           </p>
         </div>
       </div>
