@@ -14,7 +14,7 @@ const services = [
 const socialLinks = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/tishtito?igsh=MWx6cXlqY2Q3ZXplZQ==",
+    href: "https://www.instagram.com/_chinedu254?igsh=MTQ2cm42M2x3cWs3Mg==",
     icon: Instagram,
   },
   {
@@ -81,9 +81,9 @@ export function Contact() {
           </p>
 
           <ul className="space-y-5 mb-10 text-beige/80 text-sm">
-            <li className="flex items-center gap-4"><Mail size={16} className="text-crimson" /> bookings@modelverse.studio</li>
+            <li className="flex items-center gap-4"><Mail size={16} className="text-crimson" /> jeannetehope28@gmail.com</li>
             <li className="flex items-center gap-4"><Phone size={16} className="text-crimson" /> +254 740 121892</li>
-            <li className="flex items-center gap-4"><MapPin size={16} className="text-crimson" /> 14 Mercer Street, New York</li>
+            <li className="flex items-center gap-4"><MapPin size={16} className="text-crimson" /> Nairobi, Kenya</li>
           </ul>
 
           <div className="flex gap-3">
