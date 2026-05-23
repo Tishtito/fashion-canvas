@@ -5,7 +5,12 @@ export function Hero() {
   return (
     <section id="top" className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={hero} alt="Fashion model in a navy tailored outfit" className="w-full h-full object-cover object-center" />
+        <img
+          src={hero}
+          alt="Jeannete Hope Wangara seated in a blue tailored suit"
+          className="w-full h-full object-cover object-[58%_center] md:object-center"
+          fetchPriority="high"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-espresso via-espresso/85 to-espresso/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-espresso/40" />
       </div>

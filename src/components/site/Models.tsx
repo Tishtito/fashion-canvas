@@ -15,14 +15,14 @@ const categories = [
 ];
 
 const models = [
-  { name: "Lena Okafor", category: "Editorial Models", img: editorial },
-  { name: "Kai Mendez", category: "Commercial Models", img: streetwear },
-  { name: "Sofia Rey", category: "Female Models", img: bridal },
-  { name: "Adrian Voss", category: "Runway Models", img: corporate },
-  { name: "Maya Chen", category: "Runway Models", img: runway },
-  { name: "Amara Diallo", category: "Editorial Models", img: cultural },
-  { name: "Iris Lavigne", category: "Fashion Influencers", img: about },
-  { name: "Noor Hassan", category: "Female Models", img: hero },
+  { name: "Midnight Editorial", category: "Editorial Models", img: editorial },
+  { name: "City Layer Fit", category: "Commercial Models", img: streetwear },
+  { name: "Ivory Bridal Muse", category: "Female Models", img: bridal },
+  { name: "Executive Navy Set", category: "Runway Models", img: corporate },
+  { name: "Runway Power Look", category: "Runway Models", img: runway },
+  { name: "Heritage Luxe", category: "Editorial Models", img: cultural },
+  { name: "Soft Studio Casual", category: "Fashion Influencers", img: about },
+  { name: "Royal Blue Suit", category: "Female Models", img: hero },
 ];
 
 export function Models() {
