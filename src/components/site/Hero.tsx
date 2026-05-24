@@ -20,7 +20,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="editorial-line text-crimson uppercase tracking-[0.35em] text-xs mb-8"
+          className="editorial-line text-beige uppercase tracking-[0.35em] text-xs mb-8"
         >
           Jeannete Hope Wangara Portfolio · Est. 2025
         </motion.p>
@@ -29,10 +29,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.15 }}
-          className="font-display text-beige text-6xl md:text-8xl lg:text-9xl leading-[0.95] text-balance max-w-4xl"
+          className="font-display text-crimson text-6xl md:text-8xl lg:text-9xl leading-[0.95] text-balance max-w-4xl"
         >
-          Where <em className="text-crimson not-italic font-light">Fashion</em> <br />
-          Meets Identity.
+          Where <em className="text-beige not-italic font-light">Fashion</em> <br />
+          Meets Fierce.
         </motion.h1>
 
         <motion.p
@@ -41,8 +41,11 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-8 text-beige/75 max-w-xl text-lg leading-relaxed"
         >
-          A curated portfolio of editorial, runway, and brand campaigns —
-          built around the faces, fabrics, and stories that move culture forward.
+          The Art of the Visual Chameleon l do not just fit into a frame; 
+          I transform it.To me, modeling is the ultimate art of reinvention. My portfolio is a testament to that fluidity.
+          On any given day, I am the high-fashion silhouette bringing an avant-garde designer's vision to life on an editorial set. 
+          I am the relatable, high-energy face of a global commercial campaign, or the focused athlete projecting strength and discipline for a fitness brand. 
+          I view every creative brief not as a set of instructions, but as a character to inhabit. 
         </motion.p>
 
         <motion.div

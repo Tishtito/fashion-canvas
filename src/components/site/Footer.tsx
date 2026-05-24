@@ -64,7 +64,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 grid md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
           <h3 className="font-display text-3xl text-beige mb-4">
-            Model<span className="text-crimson">Verse</span>
+            Chinedu<span className="text-crimson">Verse</span>
           </h3>
           <p className="text-beige/60 text-sm leading-relaxed max-w-sm mb-6">
             A modern modelling house representing editorial, runway, commercial,

@@ -10,7 +10,7 @@ import about from "@/assets/about.jpg";
 import hero from "@/assets/hero.jpg";
 
 const categories = [
-  "All", "Female Models", "Kids Models", "Runway Models",
+  "All", "Female Models", "Runway Models",
   "Commercial Models", "Editorial Models", "Fitness Models", "Fashion Influencers",
 ];
 

@@ -26,30 +26,30 @@ export function Featured() {
         >
           <p className="editorial-line text-crimson uppercase tracking-[0.35em] text-xs mb-6">Featured Story</p>
           <h2 className="font-display text-4xl md:text-5xl leading-tight text-beige mb-8">
-            Silk in Motion <br /><em className="text-crimson font-light not-italic">— Vol. 07</em>
+            Changing Faces <br /><em className="text-crimson font-light not-italic">— Defining Spaces</em>
           </h2>
           <p className="text-beige/75 leading-relaxed mb-5">
-            A single hue, a single gesture. Shot over three quiet days in a
-            studio washed in espresso, this series studies how movement
-            becomes architecture when crimson silk catches the light.
+            My work bridges the gap between the structured precision of the runway and the spontaneous story told during a lifestyle shoot. 
+            This adaptability comes from a deep respect for the collaborative process. I understand that a great image requires chemistry between the model, 
+            the photographer, the stylist, and the light.Whether the aesthetic demands raw vulnerability, sharp sophistication, or commercial warmt.
           </p>
           <p className="text-beige/60 leading-relaxed mb-10">
-            Styling inspired by 1970s Saint Laurent draping, restaged for a
-            contemporary editorial sensibility.
+            I bring total presence and professional discipline to the lens. 
+            I do not have just one look—I have the look that your project needs.
           </p>
 
           <dl className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm mb-10 border-t border-border pt-8">
             <div>
-              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Photographer</dt>
-              <dd className="text-beige">Atelier Mira</dd>
+              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Height</dt>
+              <dd className="text-beige">5'10"</dd>
             </div>
             <div>
-              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Model</dt>
-              <dd className="text-beige">Lena Okafor</dd>
+              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">SKin Color</dt>
+              <dd className="text-beige">Chocolate</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Styling</dt>
-              <dd className="text-beige">House of Vela</dd>
+              <dd className="text-beige">Jeannete Hope</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Issue</dt>
