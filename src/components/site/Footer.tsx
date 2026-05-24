@@ -8,7 +8,7 @@ type BrandIconProps = {
 const socialLinks = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/tishtito?igsh=MWx6cXlqY2Q3ZXplZQ==",
+    href: "https://www.instagram.com/_chinedu254?igsh=MTQ2cm42M2x3cWs3Mg==",
     icon: Instagram,
   },
   {
