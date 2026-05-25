@@ -10,6 +10,45 @@ import {
 
 import appCss from "../styles.css?url";
 
+const siteUrl = "https://jeannetehope.co.ke/";
+const siteTitle = "Jeannete Hope Wangara | Fashion Model & Portfolio in Nairobi";
+const siteDescription =
+  "Book Jeannete Hope Wangara, a Nairobi-based fashion model for campaigns, runway, editorial, bridal, corporate, streetwear, and cultural fashion shoots.";
+const previewImage = `${siteUrl}og-image.jpg`;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Jeannete Hope Wangara",
+  url: siteUrl,
+  image: previewImage,
+  jobTitle: "Fashion Model",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Nairobi",
+    addressCountry: "KE",
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "Kenya",
+  },
+  knowsAbout: [
+    "Fashion modelling",
+    "Runway modelling",
+    "Editorial fashion",
+    "Bridal modelling",
+    "Corporate fashion",
+    "Streetwear modelling",
+    "Cultural fashion",
+    "Brand photoshoots",
+  ],
+  sameAs: [
+    "https://www.instagram.com/_chinedu254?igsh=MTQ2cm42M2x3cWs3Mg==",
+    "https://www.tiktok.com/@_chinedu254?_r=1&_t=ZS-96UAJ0DkERc",
+    "https://wa.me/254740121892",
+  ],
+};
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -72,20 +111,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "A modern, elegant frontend website for a modelling business portfolio showcasing fashion styles with photo cards and storytelling." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "A modern, elegant frontend website for a modelling business portfolio showcasing fashion styles with photo cards and storytelling." },
+      { title: siteTitle },
+      { name: "description", content: siteDescription },
+      { name: "author", content: "Jeannete Hope Wangara" },
+      { name: "robots", content: "index, follow" },
+      { property: "og:title", content: siteTitle },
+      { property: "og:description", content: siteDescription },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "A modern, elegant frontend website for a modelling business portfolio showcasing fashion styles with photo cards and storytelling." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3a526750-66d6-40ba-b9ff-34048a17efda/id-preview-212ea967--c171072a-73a8-49fd-a71a-3ad71bf0110a.lovable.app-1779578994849.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3a526750-66d6-40ba-b9ff-34048a17efda/id-preview-212ea967--c171072a-73a8-49fd-a71a-3ad71bf0110a.lovable.app-1779578994849.png" },
+      { property: "og:url", content: siteUrl },
+      { property: "og:site_name", content: "Jeannete Hope Wangara Portfolio" },
+      { property: "og:image", content: previewImage },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Jeannete Hope Wangara seated in a blue tailored suit" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: siteTitle },
+      { name: "twitter:description", content: siteDescription },
+      { name: "twitter:image", content: previewImage },
+      { name: "twitter:image:alt", content: "Jeannete Hope Wangara seated in a blue tailored suit" },
     ],
     links: [
+      {
+        rel: "canonical",
+        href: siteUrl,
+      },
       {
         rel: "icon",
         type: "image/svg+xml",
@@ -97,6 +146,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
   }),
+  scripts: () => [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify(personSchema),
+    },
+  ],
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,

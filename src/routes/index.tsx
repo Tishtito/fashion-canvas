@@ -9,13 +9,19 @@ import { Models } from "@/components/site/Models";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
+const pageTitle = "Jeannete Hope Wangara | Fashion Model & Portfolio in Nairobi";
+const pageDescription =
+  "Explore Jeannete Hope Wangara's Nairobi fashion portfolio and book her for campaigns, runway, editorial, bridal, corporate, streetwear, and cultural fashion shoots.";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "ChineduVerse Portfolio — Where Fashion Meets Identity" },
-      { name: "description", content: "A modern modelling house showcasing editorial, runway, bridal and commercial fashion stories. Book the next face of your campaign." },
-      { property: "og:title", content: "ChineduVerse Portfolio" },
-      { property: "og:description", content: "Editorial, runway, bridal and commercial modelling — curated for brands that take their image seriously." },
+      { title: pageTitle },
+      { name: "description", content: pageDescription },
+      { property: "og:title", content: pageTitle },
+      { property: "og:description", content: pageDescription },
+      { name: "twitter:title", content: pageTitle },
+      { name: "twitter:description", content: pageDescription },
     ],
   }),
   component: Index,

@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Music2, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 type BrandIconProps = {
   size?: number;
@@ -64,11 +64,11 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20 grid md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
           <h3 className="font-display text-3xl text-beige mb-4">
-            Chinedu<span className="text-crimson">Verse</span>
+            Jeannete<span className="text-crimson">Hope</span>
           </h3>
           <p className="text-beige/60 text-sm leading-relaxed max-w-sm mb-6">
-            A modern modelling house representing editorial, runway, commercial,
-            and creative talent across four continents.
+            Nairobi-based fashion model available for editorial, runway, bridal,
+            corporate, streetwear, cultural, and brand campaign work.
           </p>
            <div className="flex gap-3">
             {socialLinks.map(({ label, href, icon: Icon }) => (
@@ -111,7 +111,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col md:flex-row justify-between gap-3 text-xs text-beige/40">
-          <p>© {new Date().getFullYear()} ModelVerse Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Jeannete Hope Wangara Portfolio. All rights reserved.</p>
           <p>Crafted for the love of editorial.</p>
         </div>
       </div>

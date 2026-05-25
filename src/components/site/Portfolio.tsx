@@ -27,25 +27,25 @@ import casual from "@/assets/Casual.jpg";
 import casual2 from "@/assets/Casual2.jpg";
 
 const cards = [
-  { id: "runway-stage", img: runway, title: "Runway", location: "Nairobi", desc: "A movement-led look built for confident entrances, clean lines, and spotlight-ready posture." },
-  { id: "editorial-poise", img: editorial, title: "Editorial", location: "Nairobi", desc: "A polished magazine-style frame focused on elegance, attitude, and refined visual storytelling." },
-  { id: "corporate-power", img: corporate, title: "Corporate", location: "Nairobi", desc: "Sharp executive styling with a composed presence for business, leadership, and brand campaigns." },
-  { id: "streetwear-edge", img: streetwear, title: "Streetwear", location: "Nairobi", desc: "A city-ready fashion moment with bold styling, relaxed confidence, and expressive street energy." },
-  { id: "cultural-heritage", img: cultural, title: "Cultural", location: "Nairobi", desc: "Heritage-inspired styling that highlights texture, identity, and African fashion influence." },
-  { id: "casual-soft", img: casual, title: "Casual", location: "Nairobi", desc: "An easy everyday look shaped around comfort, natural confidence, and approachable style." },
-  { id: "streetwear-second", img: streetwear5, title: "Streetwear", location: "Nairobi", desc: "Contemporary street styling with a clean silhouette, casual strength, and editorial finish." },
-  { id: "editorial-drama", img: editorial2, title: "Editorial", location: "Nairobi", desc: "High-fashion posing with a strong mood, sculpted styling, and campaign-ready presence." },
-  { id: "corporate-tailoring", img: corporate2, title: "Corporate", location: "Nairobi", desc: "A formal wardrobe story centered on structure, professionalism, and modern executive polish." },
-  { id: "streetwear-layered", img: streetwear2, title: "Streetwear", location: "Nairobi", desc: "Layered casual pieces photographed with youthful rhythm, movement, and urban personality." },
-  { id: "bridal-grace", img: bridal, title: "Bridal", location: "Nairobi", desc: "A romantic bridal portrait designed around softness, poise, and timeless celebration styling." },
-  { id: "cultural-statement", img: cultural2, title: "Cultural", location: "Nairobi", desc: "A vibrant cultural look that pairs expressive detail with proud, graceful presentation." },
-  { id: "corporate-portrait", img: corporate3, title: "Corporate", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding." },
-  { id: "streetwear-bold", img: streetwear3, title: "Streetwear", location: "Nairobi", desc: "A stronger street-style chapter with confident styling, attitude, and camera-forward energy." },
-  { id: "editorial-motion", img: editorial3, title: "Editorial", location: "Nairobi", desc: "An elongated fashion frame that leans into silhouette, movement, and dramatic editorial balance." },
-  { id: "corporate-style", img: corporate5, title: "Runway", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding." },
-  { id: "casual-bright", img: casual2, title: "Casual", location: "Nairobi", desc: "A fresh daytime outfit story with relaxed polish, friendly charm, and wearable fashion appeal." },
-  { id: "corporate-detail", img: corporate4, title: "Corporate", location: "Nairobi", desc: "A refined business-fashion look that emphasizes detail, confidence, and camera-ready composure." },
-  { id: "streetwear-modern", img: streetwear4, title: "Streetwear", location: "Nairobi", desc: "Contemporary street styling with a clean silhouette, casual strength, and editorial finish." },
+  { id: "runway-stage", img: runway, title: "Runway", location: "Nairobi", desc: "A movement-led look built for confident entrances, clean lines, and spotlight-ready posture.", alt: "Jeannete Hope Wangara in a runway fashion look in Nairobi" },
+  { id: "editorial-poise", img: editorial, title: "Editorial", location: "Nairobi", desc: "A polished magazine-style frame focused on elegance, attitude, and refined visual storytelling.", alt: "Jeannete Hope Wangara posing for an editorial fashion portrait" },
+  { id: "corporate-power", img: corporate, title: "Corporate", location: "Nairobi", desc: "Sharp executive styling with a composed presence for business, leadership, and brand campaigns.", alt: "Jeannete Hope Wangara styled in a corporate fashion look" },
+  { id: "streetwear-edge", img: streetwear, title: "Streetwear", location: "Nairobi", desc: "A city-ready fashion moment with bold styling, relaxed confidence, and expressive street energy.", alt: "Jeannete Hope Wangara wearing a bold streetwear outfit" },
+  { id: "cultural-heritage", img: cultural, title: "Cultural", location: "Nairobi", desc: "Heritage-inspired styling that highlights texture, identity, and African fashion influence.", alt: "Jeannete Hope Wangara in heritage-inspired cultural fashion" },
+  { id: "casual-soft", img: casual, title: "Casual", location: "Nairobi", desc: "An easy everyday look shaped around comfort, natural confidence, and approachable style.", alt: "Jeannete Hope Wangara in a relaxed casual fashion look" },
+  { id: "streetwear-second", img: streetwear5, title: "Streetwear", location: "Nairobi", desc: "Contemporary street styling with a clean silhouette, casual strength, and editorial finish.", alt: "Jeannete Hope Wangara in a contemporary streetwear silhouette" },
+  { id: "editorial-drama", img: editorial2, title: "Editorial", location: "Nairobi", desc: "High-fashion posing with a strong mood, sculpted styling, and campaign-ready presence.", alt: "Jeannete Hope Wangara in a dramatic editorial fashion pose" },
+  { id: "corporate-tailoring", img: corporate2, title: "Corporate", location: "Nairobi", desc: "A formal wardrobe story centered on structure, professionalism, and modern executive polish.", alt: "Jeannete Hope Wangara wearing polished tailored corporate fashion" },
+  { id: "streetwear-layered", img: streetwear2, title: "Streetwear", location: "Nairobi", desc: "Layered casual pieces photographed with youthful rhythm, movement, and urban personality.", alt: "Jeannete Hope Wangara modelling a layered streetwear outfit" },
+  { id: "bridal-grace", img: bridal, title: "Bridal", location: "Nairobi", desc: "A romantic bridal portrait designed around softness, poise, and timeless celebration styling.", alt: "Jeannete Hope Wangara in a graceful bridal fashion look" },
+  { id: "cultural-statement", img: cultural2, title: "Cultural", location: "Nairobi", desc: "A vibrant cultural look that pairs expressive detail with proud, graceful presentation.", alt: "Jeannete Hope Wangara modelling vibrant cultural fashion" },
+  { id: "corporate-portrait", img: corporate3, title: "Corporate", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding.", alt: "Jeannete Hope Wangara in a crisp executive fashion portrait" },
+  { id: "streetwear-bold", img: streetwear3, title: "Streetwear", location: "Nairobi", desc: "A stronger street-style chapter with confident styling, attitude, and camera-forward energy.", alt: "Jeannete Hope Wangara in a confident bold street style look" },
+  { id: "editorial-motion", img: editorial3, title: "Editorial", location: "Nairobi", desc: "An elongated fashion frame that leans into silhouette, movement, and dramatic editorial balance.", alt: "Jeannete Hope Wangara in an editorial fashion silhouette" },
+  { id: "corporate-style", img: corporate5, title: "Runway", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding.", alt: "Jeannete Hope Wangara in a polished runway-ready fashion look" },
+  { id: "casual-bright", img: casual2, title: "Casual", location: "Nairobi", desc: "A fresh daytime outfit story with relaxed polish, friendly charm, and wearable fashion appeal.", alt: "Jeannete Hope Wangara in a bright casual daytime outfit" },
+  { id: "corporate-detail", img: corporate4, title: "Corporate", location: "Nairobi", desc: "A refined business-fashion look that emphasizes detail, confidence, and camera-ready composure.", alt: "Jeannete Hope Wangara in refined business fashion styling" },
+  { id: "streetwear-modern", img: streetwear4, title: "Streetwear", location: "Nairobi", desc: "Contemporary street styling with a clean silhouette, casual strength, and editorial finish.", alt: "Jeannete Hope Wangara wearing modern streetwear fashion" },
 ];
 
 export function Portfolio() {
@@ -97,7 +97,7 @@ export function Portfolio() {
                   <div className="aspect-[3/4] overflow-hidden">
                     <img
                       src={c.img}
-                      alt={c.title}
+                      alt={c.alt}
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-[1.2s] group-hover:scale-105"
                     />

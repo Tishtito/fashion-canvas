@@ -71,7 +71,7 @@ export function Models() {
               <div className="aspect-[3/4] overflow-hidden bg-secondary">
                 <img
                   src={m.img}
-                  alt={m.name}
+                  alt={`Jeannete Hope Wangara wearing the ${m.name} look`}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
