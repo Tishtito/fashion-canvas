@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 type BrandIconProps = {
@@ -28,6 +28,8 @@ const socialLinks = [
     icon: WhatsAppIcon,
   },
 ];
+
+const contactEndpoint = import.meta.env.VITE_CONTACT_ENDPOINT || "/Backend/emailcontroller.php";
 
 function TikTokIcon({ size = 16, className }: BrandIconProps) {
   return (
@@ -66,6 +68,48 @@ function WhatsAppIcon({ size = 16, className }: BrandIconProps) {
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") ?? "").trim(),
+      email: String(formData.get("email") ?? "").trim(),
+      phone: String(formData.get("phone") ?? "").trim(),
+      service: String(formData.get("service") ?? "").trim(),
+      date: String(formData.get("date") ?? "").trim(),
+      budget: String(formData.get("budget") ?? "").trim(),
+      message: String(formData.get("message") ?? "").trim(),
+    };
+
+    setSending(true);
+    setSent(false);
+    setError("");
+
+    try {
+      const response = await fetch(contactEndpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await response.json().catch(() => ({}))) as { ok?: boolean; message?: string };
+
+      if (!response.ok || !result.ok) {
+        throw new Error(result.message || "Unable to send request right now.");
+      }
+
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unable to send request right now.");
+    } finally {
+      setSending(false);
+    }
+  }
 
   return (
     <section id="contact" className="py-28 md:py-40 px-6 lg:px-10 max-w-7xl mx-auto">
@@ -81,7 +125,7 @@ export function Contact() {
           </p>
 
           <ul className="space-y-5 mb-10 text-beige/80 text-sm">
-            <li className="flex items-center gap-4"><Mail size={16} className="text-crimson" /> jeannetehope28@gmail.com</li>
+            <li className="flex items-center gap-4"><Mail size={16} className="text-crimson" /> hopejeannete@gmail.com</li>
             <li className="flex items-center gap-4"><Phone size={16} className="text-crimson" /> +254 740 121892</li>
             <li className="flex items-center gap-4"><MapPin size={16} className="text-crimson" /> Nairobi, Kenya</li>
           </ul>
@@ -103,7 +147,7 @@ export function Contact() {
         </div>
 
         <form
-          onSubmit={(e) => { e.preventDefault(); setSent(true); }}
+          onSubmit={handleSubmit}
           className="lg:col-span-7 bg-beige text-espresso p-8 md:p-12 space-y-5"
         >
           <div className="grid md:grid-cols-2 gap-5">
@@ -112,7 +156,7 @@ export function Contact() {
             <Field label="Phone Number" name="phone" type="tel" />
             <div>
               <label className="block text-[10px] uppercase tracking-[0.3em] mb-2">Service</label>
-              <select required className="w-full bg-transparent border-b border-espresso/30 py-3 focus:outline-none focus:border-crimson text-sm">
+              <select name="service" required className="w-full bg-transparent border-b border-espresso/30 py-3 focus:outline-none focus:border-crimson text-sm">
                 <option value="">Select a service</option>
                 {services.map((s) => <option key={s}>{s}</option>)}
               </select>
@@ -123,18 +167,24 @@ export function Contact() {
           <div>
             <label className="block text-[10px] uppercase tracking-[0.3em] mb-2">Message</label>
             <textarea
+              name="message"
               rows={4}
               required
               placeholder="Tell us about your vision…"
               className="w-full bg-transparent border-b border-espresso/30 py-3 focus:outline-none focus:border-crimson text-sm resize-none"
             />
           </div>
+          {(error || sent) && (
+            <p className={`text-sm ${error ? "text-crimson" : "text-espresso/70"}`} role="status" aria-live="polite">
+              {error || "Request sent. We will reply soon."}
+            </p>
+          )}
           <button
             type="submit"
-            disabled={sent}
+            disabled={sending || sent}
             className="w-full md:w-auto px-10 py-4 bg-crimson text-beige text-xs uppercase tracking-[0.3em] hover:bg-espresso transition-colors disabled:opacity-60"
           >
-            {sent ? "Request sent ✓" : "Submit Booking"}
+            {sending ? "Sending..." : sent ? "Request sent ✓" : "Submit Booking"}
           </button>
         </form>
       </div>

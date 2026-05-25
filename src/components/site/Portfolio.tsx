@@ -42,7 +42,7 @@ const cards = [
   { id: "corporate-portrait", img: corporate3, title: "Corporate", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding." },
   { id: "streetwear-bold", img: streetwear3, title: "Streetwear", location: "Nairobi", desc: "A stronger street-style chapter with confident styling, attitude, and camera-forward energy." },
   { id: "editorial-motion", img: editorial3, title: "Editorial", location: "Nairobi", desc: "An elongated fashion frame that leans into silhouette, movement, and dramatic editorial balance." },
-  { id: "corporate-style", img: corporate5, title: "Corporate", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding." },
+  { id: "corporate-style", img: corporate5, title: "Runway", location: "Nairobi", desc: "A poised professional portrait with crisp styling for profiles, campaigns, and formal branding." },
   { id: "casual-bright", img: casual2, title: "Casual", location: "Nairobi", desc: "A fresh daytime outfit story with relaxed polish, friendly charm, and wearable fashion appeal." },
   { id: "corporate-detail", img: corporate4, title: "Corporate", location: "Nairobi", desc: "A refined business-fashion look that emphasizes detail, confidence, and camera-ready composure." },
   { id: "streetwear-modern", img: streetwear4, title: "Streetwear", location: "Nairobi", desc: "Contemporary street styling with a clean silhouette, casual strength, and editorial finish." },
@@ -109,9 +109,9 @@ export function Portfolio() {
                     </div>
                     <h3 className="font-display text-2xl md:text-3xl mb-3">{c.title}</h3>
                     <p className="text-sm leading-relaxed text-espresso/75 mb-6">{c.desc}</p>
-                    <button className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-crimson hover:gap-3 transition-all">
+                    {/* <button className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-crimson hover:gap-3 transition-all">
                       View Details <ArrowRight size={14} />
-                    </button>
+                    </button> */}
                   </div>
                 </article>
               )}

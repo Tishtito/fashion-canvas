@@ -41,19 +41,19 @@ export function Featured() {
           <dl className="grid grid-cols-2 gap-y-5 gap-x-8 text-sm mb-10 border-t border-border pt-8">
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Height</dt>
-              <dd className="text-beige">5'10"</dd>
+              <dd className="text-beige">5'4"</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">SKin Color</dt>
               <dd className="text-beige">Chocolate</dd>
             </div>
             <div>
-              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Styling</dt>
-              <dd className="text-beige">Jeannete Hope</dd>
+              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Eye Color</dt>
+              <dd className="text-beige">Brown</dd>
             </div>
             <div>
-              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Issue</dt>
-              <dd className="text-beige">Spring · 2026</dd>
+              <dt className="text-[10px] uppercase tracking-[0.3em] text-beige/50 mb-1">Weight</dt>
+              <dd className="text-beige">74 Kgs</dd>
             </div>
           </dl>
 
